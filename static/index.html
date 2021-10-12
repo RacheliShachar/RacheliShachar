@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Draw</title>
+</head>
+
+<body>
+
+    <div class="board">
+        <div class="flush vstack ">
+            <div class="menubar hstack ">
+                <a class="icon-link center ">
+                    <i class="ri-lg ri-landscape-line "></i>
+                </a>
+                <div>
+                    <div style=" height: 25px;width: 25px;background-color: red; " onclick="chooseColor( 'red') "></div>
+                    <div style=" height: 25px;width: 25px;background-color: orange; " onclick="chooseColor( 'orange') "></div>
+                    <div style=" height: 25px;width: 25px;background-color: yellow; " onclick="chooseColor( 'yellow') "></div>
+                    <div style=" height: 25px;width: 25px;background-color: greenyellow; " onclick="chooseColor( 'greenyellow') "></div>
+                    <div style="height: 25px;width: 25px;background-color: green; " onclick="chooseColor( 'green') "></div>
+                    <div style="height: 25px;width: 25px;background-color: lightseagreen; " onclick="chooseColor( 'lightseagreen') "></div>
+                    <div style="height: 25px;width: 25px;background-color: blueviolet; " onclick="chooseColor( 'blueviolet') "></div>
+                    <div style="height: 25px;width: 25px;background-color: pink; " onclick="chooseColor( 'pink') "></div>
+                    <div style="height: 25px;width: 25px;background-color: blue; " onclick="chooseColor( 'blue') "></div>
+                    <div style="height: 25px;width: 25px;background-color: gray; " onclick="chooseColor( 'gray') "></div>
+                    <div style="height: 25px;width: 25px;background-color: black; " onclick="chooseColor( 'black') "></div>
+                </div>
+                <br>
+                <div class="spacer "></div>
+            </div>
+            <div class="spacer app ">
+                <canvas style="position: absolute;top: 10%;border: solid black 1px;left: 10%; "></canvas>
+            </div>
+            <br>
+            <h3>peers</h3>
+            <div id="peers-list "></div>
+
+
+        </div>
+    </div>
+    <!-- <script src="https://unpkg.com/simple-peer@9.7.2/simplepeer.min.js "></script> -->
+    <script type="text/javascript " src="simple-peer-master/simple-peer-master/simplepeer.min.js "></script>
+    <script type="text/javascript " src="draw.js "></script>
+    <script type="text/javascript " src="data.js "></script>
+
+</body>
+
+</html>
